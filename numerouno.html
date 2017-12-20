@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Numero-Uno</title>
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> 
+</head>
+<style>
+    body{
+	   margin:0;
+	   padding:0;
+	}
+    header{
+	    width:100%;
+	}
+	span{
+	  color:red;
+	}
+	hr{
+	  width:5%;
+	  border:2px solid white;
+	}
+	section{
+	   
+	   padding:100px 0;
+	}
+    .container{
+	   margin:0 auto;
+	   width:100%;
+	}
+    .logo{
+	   border:2px solid red;
+	   border-radius:20px;
+	   line-height:1em;
+	   font-size:110%;
+	   float:left;
+	}
+	nav{
+	   overflow:hidden;
+	   float:right;
+	}
+    nav ul{
+	    list-style-type:none;
+	}
+    nav ul li{
+	    display:inline-block;
+	}
+	nav ul li a{
+	   color:#333;
+	   padding:15px;
+	   font-size:25px;
+	   text-decoration:none;
+	}
+	nav li a:hover{
+	   color:red;
+	}
+	.menu-icon{
+	   background-color:#005c48;
+	   width:100%;
+	   color:#fff;
+	   cursor:pointer;
+	}
+	
+	#slideshow-container{
+	   margin:0 auto;
+	}
+	.inner-container{
+	   width:100%;
+	}
+	#slideshow-container img{
+	   margin:0 auto;
+	   border:1px black solid;
+	   width:99%;
+	}
+	#our-services{
+	    tex-align:center;
+	    padding:100px 0;
+	    background-color:rgb(255, 88, 80);
+	}
+	 .section-heading{
+	   text-align:center;
+	   width:100%;
+	 }
+     .section-heading h2{
+	    width:100%;
+	    color:#fff;
+	    tex-align:center;
+	    text-transform:uppercase;
+    }
+	p{
+	  color:#fff;
+	}
+	#woman-area{
+	  margin:auto 0;
+	  background:url(img/bg-4.jpg)no-repeat;
+	  background-size:cover;
+	}
+	#partners{
+	   background-color:rgb(255, 88, 80);
+	}
+	@media (max-width:598px){
+	     nav ul li{
+		 width:100%;
+		 float:right;
+		 }
+	
+	}
+	
+	
+
+</style>
+<body>
+    <header>
+	    <div class="container">
+	        <div class="logo"> 
+			    <h2><span>Body</span>building</h2>
+			</div> 
+			<nav>
+			<div class="menu-icon">
+			    <i class="fa fa-bars fa-2x"></i>
+			</div>
+                <ul>
+			        <li><a href="#">Home</a></li>
+					<li><a href="#">About-us</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact Us</a></li>
+			    </ul>
+            </nav>	
+	    </div>
+	</header>
+    <section id="slideshow-container">
+            <div class="inner-container">
+			    <img class="slideshow"src="img/workout-1.jpg">
+				<img class="slideshow" src="img/workout-2.jpg">
+				<img class="slideshow" src="img/workout-3.jpg">
+	        </div>
+    </section>
+	<script>
+	var myIndex=0;
+	carousel();
+	
+	function carousel(){
+	  var i;
+	  var x=document.getElementsByClassName("slideshow");
+	  for(var i=0; i< x.length; i++){
+	  x[i].style.display="none";
+	  }
+	  myIndex++;
+	  if(myIndex > x.length){myIndex = 1}
+	  x[myIndex-1].style.display="block";
+	  setTimeout(carousel, 3000);
+	}
+</script>
+   <section id="our-services">
+            <div class="container">
+			    <div class="section-heading">
+                     <h2>Welcome</h2>
+					 <hr>
+                </div>
+                <p>This website is for those who want to look great and feel great. 
+				Anyone can be healthier, have more energy, sleep better, 
+				and feel better about themselves through bodybuilding. 
+				Bodybuilding doesn't have to be expensive or take a lot of time. 
+				Our focus here is on workouts the natural bodybuilder can do at home with inexpensive equipment.
+                </p>
+            </div>
+    </section>
+	<style>
+	    #our-services h2{
+		    font-size:220%;
+		}
+	</style>
+	<section id="woman-area">
+	        <div class="container">
+	            <div class="section-heading">
+	            <h2>Woman-area</h2>
+				<hr>
+	            <p>Female bodybuilding originally developed as an outgrowth of not only the late nineteenth-century 
+				European vaudeville and circus strongwomen acts, Bernarr Macfadden's turn of the century women's physique competitions, 
+				and the weightlifting of Abbye "Pudgy" Stockton, but also as an outgrowth of the men's bodybuilding. 
+				The contest formats of men's events during the 1950s to the mid-1970s had often been supplemented 
+				with either a women's beauty contest or bikini show.</p>
+	        </div>
+	</section>
+	<style>
+	    #woman-area h2{
+		   font-size:180%;
+		}
+	    #woman-area p{
+		  font-size:150%;
+		}
+	</style>
+	<section id="partners">
+	        <div class="container">
+	            <div class="section-heading">
+	                <h2>Partners</h2>
+				    <hr>
+			    </div>
+            <div class="row text-center">			
+				<div class="col-sx-6 col-sm-3">
+				    <a href="#"><img src="img/puma.png" class="img-responsive"></a>
+					<h4>Puma</h4>
+				</div>
+				<div class="col-sx-6 col-sm-3">
+				    <a href="#"><img src="img/nike.png" class="img-responsive"></a>
+					<h4>nike</h4>
+				</div>
+				<div class="col-sx-6 col-sm-3">
+				    <a href="#"><img src="img/adidas.png" class="img-responsive"></a>
+					<h4>Adidas</h4>
+				</div>
+				<div class="col-sx-6 col-sm-3">
+				    <a href="#"><img src="img/reebok.png" class="img-responsive"></a>
+					<h4>Reebok</h4>
+				</div>
+	        </div>
+			</div>
+	</section>
+	<style>
+	#partners{
+	   padding:100px 0;
+	}
+	.row{
+	   text-align:center;
+	}
+	</style>
+	<section id="contact-us">
+	        <div class="container">
+	            <div class="section-heading">
+	                <h2>Contact-Us</h2>
+	            </div>
+			</div>
+            <div class="contact-container">			
+	            <div class="col-md-6 col-md-4">
+				    <img src="img/home-icon.png">
+                    <h4>Orlando,fl</h4>					
+				</div>
+				<div class="col-md-6 col-md-4">
+				    <img src="img/home-icon2.png">
+					<h4>863-969-8248</h4>
+				</div>
+				<div class="col-md-6 col-md-4">
+				    <img src="img/home-icon3.png">
+					<h4>Electronicsmf@aol.com</h4>
+				</div>
+	        </div>
+	</section>
+	<style>
+	    #contact-us{
+		   margin:auto 0;
+		   padding:100px 0;
+		}
+	    #contact-us h2{
+		    color:#333;
+		}
+		.contact-gallery{
+           background:blue;		   
+		   list-style-type:none;
+		  
+		}
+		.contact-container{
+		   padding:100px 0;
+		   text-align:center;
+		   margin:auto 0;
+		}
+		.contact-container .col-lg-3{
+		    float:left;
+		    width:33%;
+		}
+	</style>
+	<section id="hours">
+	        <div class="container">
+	            <h2>Hours</h2>
+	            <hr>
+	            <p>Monday-Friday: 7:30 am - 6:00 pm<p>
+	            <hr>
+	            <p>Saturday: 7:30 am - noon</p>
+				<hr>
+				
+	        </div>
+	</section>
+	<style>
+	     #hours{
+		    text-align:center;
+		    padding:100px 0;
+			background:url('img/workout-1.jpg')no-repeat;
+		  
+		 }
+		 #hours h2{
+		    font-size:285%;
+			color:#fff;
+			font-weight:700;
+		 }
+		 #hours p{
+		   font-size:255%;
+		   color:#fff;
+		   font-weight:700;
+		 }
+		
+	</style>
+	<footer>
+	       <p>&copy, All Rights Reserved
+		     Power By UxDesign</p>
+	</footer>
+	<style>
+	      footer{
+		     padding:10px;
+		     background:black;
+		  }
+		  footer p{
+		    font-size:110%;
+		    text-align:center;
+		    color:white;
+		  }
+	</style>
+</body>
+</html>
